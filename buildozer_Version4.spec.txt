@@ -1,0 +1,27 @@
+[app]
+# App metadata
+title = SLHunt
+package.name = slhunt
+package.domain = org.example
+version = 1.0
+
+# Source and assets
+source.include_exts = py,png,jpg,kv,ttf
+
+# Requirements (pandas removed for smaller APK)
+requirements = python3,kivy,requests
+
+# Orientation and UI
+orientation = portrait
+fullscreen = 0
+
+# Permissions
+android.permissions = INTERNET
+
+# Build settings
+# Build both ARMv7 and ARM64 for wider device support
+android.arch = armeabi-v7a, arm64-v8a
+
+[buildozer]
+log_level = 2
+warn_on_root = 1
